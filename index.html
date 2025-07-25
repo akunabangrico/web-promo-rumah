@@ -19,8 +19,8 @@
     <!-- Impor SwiperJS (versi 9) untuk Slider Galeri agar lebih stabil -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-    <!-- GANTI DENGAN IKON LOGO ANDA -->
-    <link rel="icon" href="https://placehold.co/32x32/16a34a/ffffff?text=PK" type="image/png">
+    <!-- GANTI DENGAN IKON LOGO ANDA DI FOLDER IMAGES -->
+    <link rel="icon" href="images/logo.png" type="image/png">
 
     <style>
         body {
@@ -85,7 +85,10 @@
     <!-- Header & Navigasi -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-green-700">PESONA KAHURIPAN 10</a>
+            <a href="#" class="flex items-center">
+                <img src="images/logo.png" alt="Logo Pesona Kahuripan 10" class="h-8 mr-3"> <!-- Pastikan nama file 'logo.png' dan ada di folder 'images' -->
+                <span class="text-xl font-bold text-green-700">PESONA KAHURIPAN 10</span>
+            </a>
             <div class="hidden md:flex space-x-8">
                 <a href="#promo" class="text-gray-600 hover:text-green-700">Promo</a>
                 <a href="#galeri" class="text-gray-600 hover:text-green-700">Galeri</a>
@@ -119,56 +122,53 @@
                 </div>
             </div>
             <div class="container mx-auto px-6 mt-10">
-                 <img src="https://images2.imgbox.com/39/10/IrDXAonC_o.png" alt="Tampak utama perumahan Pesona Kahuripan 10" class="rounded-xl shadow-2xl w-full h-auto max-h-[500px] object-cover mx-auto">
+                 <!-- GAMBAR UTAMA DARI FOLDER LOKAL -->
+                 <img src="images/gambar-utama.jpg" alt="Tampak utama perumahan Pesona Kahuripan 10" class="rounded-xl shadow-2xl w-full h-auto max-h-[500px] object-cover mx-auto" loading="lazy" decoding="async">
             </div>
         </section>
 
-        <!-- Bagian Galeri (Layout Baru) -->
+        <!-- Bagian Galeri -->
         <section id="galeri" class="py-20">
             <div class="container mx-auto px-6">
                 <div class="section-header">
                     <h2>Galeri Rumah</h2>
-                    <p>Lihat lebih dekat setiap sudut rumah impian Anda. Kualitas terbaik di kelasnya.</p>
+                    <p>Geser untuk melihat lebih dekat setiap sudut rumah impian Anda. Kualitas terbaik di kelasnya.</p>
                 </div>
                 
-                <div class="max-w-4xl mx-auto mb-8">
-                    <div class="bg-white rounded-xl overflow-hidden shadow-2xl">
-                        <img src="https://images2.imgbox.com/39/10/IrDXAonC_o.png" alt="Foto utama tampak depan rumah" class="w-full h-auto max-h-[500px] object-cover">
-                        <div class="p-4 font-bold text-center text-lg bg-gray-50">Tampak Depan</div>
-                    </div>
-                </div>
-
-                <p class="text-center text-lg text-gray-600 mb-8">Geser untuk melihat detail ruangan lainnya</p>
-
                 <div class="swiper max-w-6xl mx-auto">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="bg-white rounded-lg overflow-hidden custom-shadow transition-all duration-300">
-                                <img src="https://images2.imgbox.com/ac/96/DUrBnijB_o.png" alt="Foto ruang tamu" class="w-full h-64 object-cover">
+                                <!-- RUANG TAMU DARI FOLDER LOKAL -->
+                                <img src="images/ruang-tamu.jpg" alt="Foto ruang tamu" class="w-full h-64 object-cover" loading="lazy" decoding="async">
                                 <div class="p-4 font-semibold text-center">Ruang Tamu</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="bg-white rounded-lg overflow-hidden custom-shadow transition-all duration-300">
-                                <img src="https://images2.imgbox.com/f7/41/PGXBGb6K_o.png" alt="Foto kamar tidur utama" class="w-full h-64 object-cover">
+                                <!-- KAMAR 1 DARI FOLDER LOKAL -->
+                                <img src="images/kamar-1.jpg" alt="Foto kamar tidur utama" class="w-full h-64 object-cover" loading="lazy" decoding="async">
                                 <div class="p-4 font-semibold text-center">Kamar Tidur 1</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="bg-white rounded-lg overflow-hidden custom-shadow transition-all duration-300">
-                                <img src="https://images2.imgbox.com/6c/07/8DBHQEb1_o.png" alt="Foto kamar tidur anak" class="w-full h-64 object-cover">
+                                <!-- KAMAR 2 DARI FOLDER LOKAL -->
+                                <img src="images/kamar-2.jpg" alt="Foto kamar tidur anak" class="w-full h-64 object-cover" loading="lazy" decoding="async">
                                 <div class="p-4 font-semibold text-center">Kamar Tidur 2</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                              <div class="bg-white rounded-lg overflow-hidden custom-shadow transition-all duration-300">
-                                <img src="https://images2.imgbox.com/a4/0c/R6PILWnp_o.png" alt="Foto kamar mandi" class="w-full h-64 object-cover">
+                                <!-- KAMAR MANDI DARI FOLDER LOKAL -->
+                                <img src="images/kamar-mandi.jpg" alt="Foto kamar mandi" class="w-full h-64 object-cover" loading="lazy" decoding="async">
                                 <div class="p-4 font-semibold text-center">Kamar Mandi</div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="bg-white rounded-lg overflow-hidden custom-shadow transition-all duration-300">
-                                <img src="https://images2.imgbox.com/f0/a2/wshPuURT_o.png" alt="Foto dapur" class="w-full h-64 object-cover">
+                                <!-- DAPUR DARI FOLDER LOKAL -->
+                                <img src="images/dapur.jpg" alt="Foto dapur" class="w-full h-64 object-cover" loading="lazy" decoding="async">
                                 <div class="p-4 font-semibold text-center">Dapur</div>
                             </div>
                         </div>
@@ -187,7 +187,6 @@
                     <h2>Video Tur</h2>
                     <p>Rasakan pengalaman berada di dalam rumah melalui video tur eksklusif kami.</p>
                 </div>
-                <!-- VIDEO TIKTOK SUDAH DIGANTI -->
                 <div class="video-container rounded-xl shadow-2xl max-w-sm mx-auto">
                     <iframe src="https://www.tiktok.com/embed/v2/7520545409610091832" allowfullscreen></iframe>
                 </div>
@@ -306,33 +305,32 @@
     <!-- Script untuk SwiperJS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const swiper = new Swiper('.swiper', {
-            slidesPerView: 1, // Tampilkan 1 slide di mobile
-            spaceBetween: 20,
-            loop: true,
-            pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            },
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            },
-            // Aturan untuk layar lebih besar (responsive)
-            breakpoints: {
-                // Jika lebar layar 640px atau lebih
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                // Jika lebar layar 1024px atau lebih
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                }
-            }
-        });
+      // PERBAIKAN: Menghapus event listener 'DOMContentLoaded' untuk eksekusi yang lebih langsung
+      const swiper = new Swiper('.swiper', {
+          slidesPerView: 1, // Tampilkan 1 slide di mobile
+          spaceBetween: 20,
+          loop: true,
+          pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          },
+          navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          },
+          // Aturan untuk layar lebih besar (responsive)
+          breakpoints: {
+              // Jika lebar layar 640px atau lebih
+              640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20
+              },
+              // Jika lebar layar 1024px atau lebih
+              1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 30
+              }
+          }
       });
     </script>
 
